@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-left:10%;
+    font-family:'Lobster', cursive;
+    flex:30%;
+    text-align:left;
+    font-size:27px;
+}
+
+.menu{
+    flex:60%;
+    text-align: right;
+    padding:20px;
+}
+
+.menu a{
+    color: #180F4A;
+    text-decoration: none;
+    font-size:20px;
+    padding:20px 16px;
+}
+
+.menu a:hover{
+    color:#eb594c;
+    border-top:4px solid #180F4A;
+}
+
+#button{
+    background: #180F4A;
+    padding: 10px 25px;
+    color:white;
+    border-radius:5px;
+    margin-right:10%;
+    margin-left:5%;
+}
+
+#button:hover{
+    border:none;
+    background: #eb594c;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    flex:40%;
+    margin-left:10%;
+    text-align: center;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color:#180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    text-align: left;
+}
+
+.headline a{
+    display: inline-block;
+    background: #180F4A;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.headline a:hover{
+    background: #eb594c;
+}
+
+.img-headline{
+    margin-left: 2%;
+    margin-right:8%;
+    flex:40%;
+    text-align: center;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+
+
+section h3{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    font-family:'Lobster', cursive;
+    font-weight: bold;
+    color: #180F4A;
+}
+
+.content{
+    margin-top:80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: justify;
+    width: 90%;
+
+    /**/
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    /**/
+}
+
+.content div{
+    background: #95bec9;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+@media screen and (min-width: 800px){
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+    
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+
+.content div p{
+    text-indent: 2em;
+}
+
+
+.content a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.content a:hover{
+    color: #eb594c;
+}
