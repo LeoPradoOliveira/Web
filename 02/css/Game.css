@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@keyframes rainbow {
+    from {
+        color: #6666ff;
+    }
+
+    10% {
+        color: #0099ff;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    75% {
+        color: #ff3399;
+    }
+
+    100% {
+        color: #6666ff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+
+.page-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr 0.001fr;
+}
+
+/*Header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    border-bottom: 4px solid #ffffff;
+}
+
+.user {
+    display: flex;
+    justify-self: left;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 64px 262.5px 140px 120px;
+}
+
+.name {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px 16px;
+    text-align: left;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.lstSession {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 10px 16px;
+    text-align: left;
+    justify-content: center;
+}
+
+.recorde {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 10px 16px;
+    text-align: left;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+nav a:hover {
+    color: #eb594c;
+}
+
+/*Main*/
+main {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.pergunta {
+    color: #ffffff;
+}
+
+.pergunta h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pergunta h2 {
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+}
+
+/*Formulário*/
+form {
+    display: grid;
+    width: 70%;
+    height: 70%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+form input[type="submit"] {
+    grid-column: span 2;
+    padding: 20px 60px;
+    border: 4px solid #ffffff;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 32px;
+    cursor: grabbing;
+}
+
+form input[type="submit"]:hover {
+    color: #eb594c;
+    cursor: pointer;
+}
+
+.alternativa input[type="radio"] {
+    display: none;
+}
+
+.alternativa label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1E1E1E;
+    border: 4px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.alternativa label:hover {
+    color: #eb594c;
+}
+
+.alternativa input[type="radio"]:checked+label {
+    background-color: #1e6d4c;
+}
+
+/*Footer*/
+footer {
+    padding: 0 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .Coltec {
+    justify-self: start;
+}
+
+footer .SBT {
+    justify-self: end;
+
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0;
+    justify-self: center;
+    color: #ffffff;
+}
+
+footer a:hover {
+    animation: rainbow 3s linear 0s infinite;
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@keyframes rainbow {
+    from {
+        color: #6666ff;
+    }
+
+    10% {
+        color: #0099ff;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    75% {
+        color: #ff3399;
+    }
+
+    100% {
+        color: #6666ff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+
+.page-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr 0.001fr;
+}
+
+/*Header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    border-bottom: 4px solid #ffffff;
+}
+
+.user {
+    display: flex;
+    justify-self: left;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 64px 262.5px 140px 120px;
+}
+
+.name {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px 16px;
+    text-align: left;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.lstSession {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 10px 16px;
+    text-align: left;
+    justify-content: center;
+}
+
+.recorde {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 10px 16px;
+    text-align: left;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+nav a:hover {
+    color: #eb594c;
+}
+
+/*Main*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 64px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 32px;
+    margin: 0;
+}
+
+main img {
+    padding: 0;
+    margin: 0;
+}
+
+main a {
+    text-decoration: none;
+    padding: 20px 60px;
+    border: 4px solid #ffffff;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 32px;
+}
+
+main a:hover {
+    color: #eb594c;
+}
+
+/*Footer*/
+footer {
+    padding: 0 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .Coltec {
+    justify-self: start;
+}
+
+footer .SBT {
+    justify-self: end;
+
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0;
+    justify-self: center;
+    color: #ffffff;
+}
+
+footer a:hover {
+    animation: rainbow 3s linear 0s infinite;
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@keyframes rainbow {
+    from {
+        color: #6666ff;
+    }
+
+    10% {
+        color: #0099ff;
+    }
+
+    50% {
+        color: #00ff00;
+    }
+
+    75% {
+        color: #ff3399;
+    }
+
+    100% {
+        color: #6666ff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+}
+
+.page-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr 0.001fr;
+}
+
+/*header*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    border-bottom: 4px solid #ffffff;
+}
+
+.voltar {
+    text-align: left;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+nav a:hover {
+    color: #eb594c;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/*Form*/
+form {
+    color: #ffffff;
+    min-width: 380px;
+    min-height: 200px;
+    background-color: #1E1E1E;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form input[type="submit"]:focus {
+    outline: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*Footer*/
+footer {
+    padding: 0 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .Coltec {
+    justify-self: start;
+}
+
+footer .SBT {
+    justify-self: end;
+
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0;
+    justify-self: center;
+    color: #ffffff;
+}
+
+footer a:hover {
+    animation: rainbow 3s linear 0s infinite;
+}
+
+/*Mensagem de erro*/
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    position: fixed;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
