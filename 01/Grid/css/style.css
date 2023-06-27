@@ -84,6 +84,10 @@ nav {
     margin: 0;
 }
 
+.headline h2:nth-of-type(2){
+    font-size: 70px;
+}
+
 .headline p {
     text-align: left;
 }
@@ -105,6 +109,10 @@ nav {
     margin-left: 2%;
     flex: 40%;
     text-align: center;
+}
+
+.img-headline img{
+    max-width: 100%;
 }
 
 abbr {
